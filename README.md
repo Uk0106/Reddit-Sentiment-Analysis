@@ -6,8 +6,9 @@ The objective is to detect anxiety in a sentence.
 
 1. Using web scrapping tools, data from Reddit (https://www.reddit.com/r/Anxiety/) is extracted. 
 2. A database of only 500 sentences from the body of the reddit posts is created. 
-3. First 200 sentences from the database are annotated with 0-1 indicators. 0 means not anxious, and 1 means anxious.
-4. 4 different models that learns on the annotated portion of the database are built.  
+3. A training dataset from first 200 sentences and testing from remaining sentences is created.
+4. Sentences from train dataset are annotated with 0-1 indicators. 0 means not anxious, and 1 means anxious.
+5. 4 different models that learns on the annotated portion of the database are built.  
    Algorithms used are:
    1. Random Forest Classifier
    2. Logistic Regression
